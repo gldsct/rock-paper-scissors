@@ -8,16 +8,31 @@
         <meta name = "author" content = "Ritik">
         <meta name = "description" content = "Project: Rock Paper Scissors, by Ritik">
         <title>Rock, Paper, Scissors</title>
+        <link rel = "stylesheet" href = "main.css">
         <script src = "javascript.js" defer></script>
 
     </head>
 
+    <!-- <body style = "background-color: black;"> -->
     <body>
-
         <h1>Project: Rock Paper Scissors</h1>
-        <p>Written by Ritik, as a part of "The Odin Project" curriculum for JavaScript Foundations</p>
-        <p>This project runs entirely on the console. Please open the console to see it!</p>
         
+        <br/>
+
+        <section id = "choices">
+            <button id = "rock"><img src = "https://www.emoji.family/api/emojis/1faa8/noto/svg" alt = "Rock" title = "Rock" height = "250" width = "250"></button>
+            <button id = "paper"><img src = "https://www.emoji.family/api/emojis/1f4c4/noto/svg" alt = "Paper" title = "Paper" height = "250" width = "250"></button>
+            <button id = "scissors"><img src = "https://www.emoji.family/api/emojis/2702/noto/svg" alt = "Scissors" title = "Scissors" height = "250" width = "250"></button>
+        </section>
+
+        <br/><br/>
+
+        <section id = "result">
+            <h2>Results</h2>
+            <p id = "roundResult"></p>
+            <p id = "gameResult"></p>
+        </section>
+
     </body>
 
 </html>
