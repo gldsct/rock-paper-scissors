@@ -43,13 +43,6 @@ function gameResults (playerScore, computerScore) {
 
 function resetGame () {
     result.appendChild(newGameButton);
-    newGameButton.addEventListener("click", (event) => {
-        playerScore = 0;
-        computerScore = 0;
-        roundResult.textContent = "";
-        gameResult.textContent = "";
-        result.removeChild(newGameButton);
-    });
 }
 
 let playerScore = 0;
@@ -72,3 +65,11 @@ const gameResult = document.querySelector("#gameResult");
 const newGameButton = document.createElement("button");
 newGameButton.textContent = "Start new game?"
 newGameButton.style.cssText = "height: 30px; width: 200px; font-size: 22px;"
+
+newGameButton.addEventListener("click", (event) => {
+    playerScore = 0;
+    computerScore = 0;
+    roundResult.textContent = "";
+    gameResult.textContent = "";
+    result.removeChild(newGameButton);
+});
